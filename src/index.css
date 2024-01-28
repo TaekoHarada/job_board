@@ -1,0 +1,378 @@
+:root {
+  font-family: monospace;
+
+  --main-bg-color: #ffffff;
+  --side-bg-color: #f1f1f1;
+  --text-color: #333;
+  --font-title: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline 2px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-rignt {
+  text-align: right;
+}
+
+#sidebar {
+  background-color: var(--side-bg-color);
+}
+
+.logo {
+  font-size: 4rem;
+  opacity: 0.9;
+  margin: 20px;
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+#sidebar {
+  min-width: 300px;
+  min-height: 100vh;
+}
+
+#main-contents {
+  min-height: 90vh;
+  padding: 50px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #393939;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+footer .github-mark {
+  background-color: #f1f1f1;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 0 5px 0 20px;
+}
+
+footer .github-url {
+  display: inline;
+  color: white;
+  font-size: 1rem;
+}
+
+footer .github-url:hover {
+  text-decoration: underline;
+}
+
+.search_button {
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+  background: #ffd814;
+  border: 1px solid #fcd200;
+  font-size: 1.2rem;
+  height: 31px;
+  padding: 0 11px;
+  text-align: center;
+  min-width: 200px;
+  font-weight: 500;
+  color: #0f1111;
+}
+
+.search_button:hover {
+  background: #f7ca00;
+  border-color: #f2c200;
+  box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}
+.cancel_button {
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+  background: #d2d2d2;
+  border: 1px solid #d2d2d2;
+  font-size: 1.2rem;
+  height: 31px;
+  padding: 0 11px;
+  text-align: center;
+  min-width: 200px;
+  font-weight: 500;
+  color: #0f1111;
+}
+
+.cancel_button:hover {
+  background-color: #b6b6b6;
+}
+.button {
+  cursor: pointer;
+  border: 1px black solid;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #393939;
+  font-size: 13px;
+  height: 31px;
+  padding: 0 11px;
+  text-align: center;
+  min-width: 200px;
+  font-weight: 400;
+}
+
+.button:hover {
+  background-color: #696969;
+}
+
+input {
+  border: 0;
+  outline: 0;
+  color: rgb(60, 66, 87);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px,
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 4px 8px;
+  min-height: 28px;
+  vertical-align: middle;
+  transition: background-color 0.24s, box-shadow 0.24s;
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.24s, 0.24s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+}
+
+input:focus {
+  box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+    rgb(58 151 212 / 36%) 0px 0px 0px 4px, rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+    rgb(60 66 87 / 16%) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+}
+
+span {
+  margin-right: 5px;
+  font-size: 1.1rem;
+  text-align: right;
+  display: inline-block;
+  width: 80px;
+}
+
+/* General setting*/
+.button-container {
+  margin-top: 30px;
+}
+
+.button-container button {
+  margin-right: 10px;
+}
+
+/* Sidebar */
+#sidebar input {
+  margin-bottom: 10px;
+}
+
+#sidebar .search_button {
+  margin: 0 20px;
+}
+
+#sidebar nav ul {
+  margin: 50px 0;
+}
+#sidebar nav ul li {
+  list-style: none;
+  font-size: 1.1rem;
+  margin: 15px 25px 0 25px;
+}
+
+#sidebar #add-new-job-form {
+  margin: 0 20px;
+}
+
+/* Error Page */
+#error-page {
+  padding: 50px;
+}
+
+.return {
+  margin-top: 30px;
+}
+
+/* Index Page */
+#index_page h2 {
+  font-family: var(--font-title);
+}
+
+#index_page p {
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+
+/* Job Detail Page */
+#job_detail_page h2 {
+  font-size: 2.3rem;
+}
+
+#job_detail_page .label {
+  border-left: #ffd814 solid 5px;
+  /* border-bottom: #ffd814 solid 1px; */
+  padding-left: 5px;
+}
+
+#job_detail_page .search_button {
+  margin: 20px 0;
+}
+
+#job_detail_page p {
+  font-size: 1.2rem;
+}
+
+#job_detail_page .job-item {
+  margin-top: 30px;
+}
+
+#job_detail_page .label {
+  padding-right: 10px;
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+#job_detail_page .item {
+  margin: 10px 0 0 40px;
+}
+
+/* Job Application Page, Job Application Comfirmation Page */
+#job_application_page label,
+#job_apply_confirmation_page label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#job_application_page #form_address input {
+  width: 300px;
+}
+
+.job-info .job-title {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+.job-info .job-location {
+  font-size: 1.1rem;
+}
+
+#job_application_page #apply-form,
+#job_apply_confirmation_page #apply-form {
+  margin: 30px 0;
+}
+
+#job_application_page h2,
+#job_apply_confirmation_page h2 {
+  margin: 20px 0;
+}
+
+#job_application_page label,
+#job_apply_confirmation_page label {
+  margin: 10px;
+}
+
+#job_apply_confirmation_page label {
+  padding: 10px;
+}
+
+#job_apply_confirmation_page label p {
+  display: inline;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #fff5c2;
+}
+
+/* Job Edit Page */
+#job_edit_page label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#job_edit_page input {
+  width: 230px;
+}
+
+.job-description {
+  margin-top: 30px;
+}
+
+.job-description p {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+#job_edit_page textarea {
+  width: 500px;
+  border: 0;
+  outline: 0;
+  color: rgb(60, 66, 87);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px,
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 4px 8px;
+}
+
+#apply_success_page h2 {
+  font-size: 2.3rem;
+  margin-bottom: 30px;
+}
+
+#apply_success_page p {
+  font-size: 1.2rem;
+}
+
+.return {
+  margin-top: 50px;
+}

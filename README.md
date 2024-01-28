@@ -3,9 +3,13 @@
 【 Functions 】
 
 > Job search by ‘job title’ and ‘location’
+
 > Show job detail
+
 > Apply job form (‘Form page’ and ‘Confirmation page’)
+
 > Add new job
+
 > Update job details
 
 【 Data strage 】

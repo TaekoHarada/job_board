@@ -1,4 +1,6 @@
-# Job Board Web Application by using React Router
+Job Board Web Application by using React Router
+
+Routing by React Router
 
 【 Functions 】
 
@@ -16,8 +18,8 @@
 
 > localStrage (JavaScript)
 
-    Job data are stored in localStrage.
+    This app does not have DB. job data are stored localStorage temporary😅
 
 > sessionStrage (JavaScript)
 
-    Form data are stored in sessionStrage, and released after submission.
+    Form data are stored in sessionStorage, and released after submission.
